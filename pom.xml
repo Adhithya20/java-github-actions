@@ -8,11 +8,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>github-actions-java-lab</artifactId>
+    <artifactId>java-github-actions</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>GitHub Actions Java Lab</name>
+    <name>Java GitHub Actions</name>
     <description>Java Maven application for GitHub Actions CI/CD Lab</description>
 
     <properties>
@@ -36,6 +36,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.1.2</version>
             </plugin>
         </plugins>
     </build>
