@@ -1,12 +1,12 @@
 package com.example;
 
-public class App {
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    public static String getMessage() {
-        return "Hello from GitHub Actions!";
-    }
+public class AppTest {
 
-    public static void main(String[] args) {
-        System.out.println(getMessage());
+    @Test
+    void testGetMessage() {
+        assertEquals("Hello from GitHub Actions!", App.getMessage());
     }
 }
